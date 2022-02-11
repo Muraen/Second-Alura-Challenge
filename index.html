@@ -1,0 +1,60 @@
+<body>
+
+      <main>
+
+        <div class="buttons">
+            <h2>Jogo da Forca</h2>
+            <button class="btn-init">NOVO JOGO</button>
+            <input id="new-word" type="text" onkeyup="getWord()" onkeydown="getWord()" placeholder="Escreva uma nova palavra" style="display: none;">  
+            <button id="add-word" class="add-word" style="display: none;">ADICIONAR PALAVRA</button>
+        </div>  
+
+        <div class="desenho">
+
+          <div class="canvas">
+            
+            <canvas id="r16" width="120" height="5" style="background: white;"></canvas>
+            <div class="r1517">
+              <canvas id="r15" width="5" height="300" style="background: white;"></canvas>
+
+              <div>
+                <canvas id="r17" width="5" height="50" style="background: white;"></canvas>
+                <canvas id="r18" width="50" height="50" style="background: white;"></canvas>  
+              
+                <div class="tronco">
+                  <canvas id="r19" width="5" height="0" style="background: white;"></canvas>
+                  <canvas id="r20" width="5" height="80" style="background: white;"></canvas>
+                  <canvas id="r21" width="5" height="0" style="background: white;"></canvas>
+                </div>  
+                
+                <div class="pernas">
+                  <canvas id="r22" width="5" height="0" style="background: white;"></canvas>
+                  <canvas id="r23" width="5" height="0" style="background: white;"></canvas>  
+                </div>
+                
+              </div>  
+            </div>
+
+            <canvas id="r14" width="250" height="5" style="background: white;"></canvas>  
+          </div>
+        
+          <div class="container-word">
+                <div class="msg-final"></div>
+                <div class="erros"></div>
+                <div class="word-secret">_ _ _ _ _ _ _ _ _ _ </div>
+          </div>
+
+        </div>
+
+        <button id="desistir" style="display: block;">DESISTIR</button>
+
+      </main>
+
+      <input id="input-aux" type="text">
+
+  
+
+  <script src="index.js"></script>
+
+
+</body>
